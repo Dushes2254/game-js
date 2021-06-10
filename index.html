@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <title>Game</title>
+</head>
+<body>
+  
+  <div class="wrapper">
+
+    <div class="field" id="game-field">
+      <div class="player" id="first-player"></div>
+      <div class="player" id="second-player"></div>
+    </div>
+
+		<form name="сharacters" id="form">
+			<h2>Задайте параметры</h2>
+			<label>
+				<input name="first-player-css-size"
+							 placeholder="от 20 до 100"
+							 type="number"
+							 min="20"
+							 max="100">
+				Введите размеры первого игрока
+			</label>
+			<label>
+				<input name="second-player-css-size" 
+							 placeholder="от 20 до 100"
+							 type="number"
+							 min="20"
+							 max="100">
+				Введите размеры второго игрока
+			</label>
+			<label>
+				<input name="first-player-speed"
+				 			 placeholder="от 1 до 10"
+							 type="number"
+							 min="1"
+							 max="10">
+				Введите скорость первого игрока
+			</label>
+			<label>
+				<input name="second-player-speed"
+				       placeholder="от 1 до 10"
+							 type="number"
+							 min="1"
+							 max="10">
+				Введите скорость первого игрока
+			</label>
+			<button type="submit" id="start-game">Начать игру</button>
+		</form>
+
+		<h1 id="game-over">GAME OVER</h1>
+
+  </div>
+  
+  <script src="./main.js"></script>
+</body>
+</html>
